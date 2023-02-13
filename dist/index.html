@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This application is a countdown timer, it works in a simple base, you just need to select a date and let it do all the calculation for you, be aware that if you select a pervious date it will notify you about it."
+    />
+    <meta name="keywords" content="time, countdown, date" />
+    <meta name="author" content="Tir Mohamed Mehdi" />
+    <meta name="copyright" content="TMM webDev" />
+
+    <!--- App title -------------->
+    <title>Countdown Timer</title>
+    <!--- App icon --------------->
+    <link rel="shortcut icon" href="image/app_icon.png" />
+  <script defer src="javascript/mainApp.js"></script><script defer src="javascript/subApp.js"></script><script defer src="javascript/conditionsApp.js"></script><script defer src="javascript/variablesApp.js"></script></head>
+  <body>
+    <div class="container">
+      <!--- header ----------------->
+      <header>
+        <div class="logo">
+          <img
+            src="image/app_icon.png"
+            alt="app logo"
+            class="logo_img"
+          />
+          <p class="logo_text">Countdown Timer</p>
+        </div>
+      </header>
+      <!--- main ------------------->
+      <main>
+        <section class="cont">
+          <!-- form -------->
+          <form action="#" class="form">
+            <div class="inputs">
+              <input type="text" class="num day" placeholder="Day" max="2" />
+              <input
+                type="text"
+                class="num month"
+                placeholder="Month"
+                max="2"
+              />
+              <input type="text" class="num year" placeholder="Year" max="4" />
+            </div>
+            <button type="submit" class="btn submit">select date</button>
+            <button type="reset" class="hide btn reset">reset</button>
+          </form>
+          <!-- message ----->
+          <div class="info msg">
+            <img
+              src="image/info.svg"
+              alt="info icon"
+              class="msg_img"
+            />
+            <p class="msg_txt">
+              Add a future date in the input fields and click select date.
+            </p>
+          </div>
+
+          <div class="hide calc msg">
+            <img
+              src="image/info.svg"
+              alt="info icon"
+              class="msg_img"
+            />
+            <p class="msg_txt">The calculation is on progress.</p>
+          </div>
+
+          <div class="hide error_num msg">
+            <img
+              src="image/errore.svg"
+              alt="error icon"
+              class="msg_img"
+            />
+            <p class="msg_txt">
+              Select valid a date, or select a date above the current date.
+            </p>
+          </div>
+
+          <div class="hide done msg">
+            <img
+              src="image/done.svg"
+              alt="done icon"
+              class="msg_img"
+            />
+            <p class="msg_txt">The date has been selected successfully.</p>
+          </div>
+
+          <!-- mask ------->
+          <div class="hide mask">
+            <!-- timer ------>
+            <p class="timer">
+              <span class="yearDes">00</span> <span class="dots">:</span>
+              <span class="monthDes">00</span> <span class="dots">:</span>
+              <span class="dayDes">00</span> <span class="dots">:</span>
+              <span class="hourDes">00</span> <span class="dots">:</span>
+              <span class="minuteDes">00</span> <span class="dots">:</span>
+              <span class="secDes">00</span>
+            </p>
+            <!-- bar ------->
+            <div class="bar">
+              <span class="progress"></span>
+            </div>
+            <!-- date ------>
+            <div class="date">
+              <p class="date_text">Selected date is: <span></span></p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
