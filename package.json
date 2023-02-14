@@ -1,0 +1,29 @@
+{
+  "name": "mini_challenge_num_12_countdown_timer",
+  "version": "1.0.0",
+  "description": "This application is a countdown timer, it works in a simple base, you just need to select a date and let it do all the calculation for you, be aware that if you select a pervious date it will notify you about it.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack",
+    "live": "webpack serve",
+    "go": "webpack && webpack serve"
+  },
+  "keywords": [
+    "time",
+    "countdown",
+    "date"
+  ],
+  "author": "Tir Mohamed Mehdi",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.7.2",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^8.0.0",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}

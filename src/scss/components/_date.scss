@@ -1,0 +1,13 @@
+.date {
+  background-color: $colorWhite;
+  color: $colorMainPurple;
+  font-size: 2.3rem;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  text-align: center;
+
+  .date_text span {
+    font-weight: $fontWeight_700;
+    margin-left: 1rem;
+  }
+}

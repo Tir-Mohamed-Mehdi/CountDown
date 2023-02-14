@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6rem;
+
+  gap: 2rem;
+  .logo_img {
+    width: 4rem;
+  }
+  .logo_text {
+    font-size: 1.6rem;
+    font-weight: $fontWeight_600;
+  }
+}

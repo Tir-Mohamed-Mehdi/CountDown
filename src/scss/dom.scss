@@ -1,0 +1,8 @@
+.hide {
+  display: none;
+}
+
+.disableInput {
+  pointer-events: none;
+  background-color: $colorDisableInput;
+}

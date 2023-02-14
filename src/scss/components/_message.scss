@@ -1,0 +1,37 @@
+.msg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  border-radius: 0.2rem;
+}
+
+.info,
+.calc {
+  background-color: $colorInfBackground;
+  border-left: 0.6rem solid $colorInfo;
+  color: $colorInfo;
+
+  font-size: 1.7rem;
+  font-weight: $fontWeight_400;
+}
+
+.error_num {
+  background-color: $colorErrBackground;
+  border-left: 0.6rem solid $colorError;
+  color: $colorError;
+
+  font-size: 1.7rem;
+  font-weight: $fontWeight_400;
+}
+
+.done {
+  background-color: $colorDonBackground;
+  border-left: 0.6rem solid $colorDone;
+  color: $colorDone;
+
+  font-size: 1.7rem;
+  font-weight: $fontWeight_400;
+}

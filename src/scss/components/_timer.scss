@@ -1,0 +1,24 @@
+.timer {
+  position: relative;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: $colorWhite;
+  font-size: 5.3rem;
+  font-weight: $fontWeight_600;
+}
+
+.dots {
+  animation: bib 900ms infinite;
+}
+
+@keyframes bib {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

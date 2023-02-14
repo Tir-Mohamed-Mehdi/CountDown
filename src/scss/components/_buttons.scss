@@ -1,0 +1,28 @@
+.btn {
+  width: 15.4rem;
+  padding: 1rem 4rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  color: $colorWhite;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.submit {
+  background-color: $colorMainPurple;
+  box-shadow: inset 0 1px 0 0 $colorWhite, inset 0 -1px 0 0 $colorWhite,
+    inset 1px 0 0 0 $colorWhite, inset 1px 0 0 0 $colorWhite,
+    inset -1px 0 0 0 $colorWhite;
+}
+.submit:active {
+  background-color: $colorPurpleActive;
+}
+
+.reset {
+  background-color: $colorError;
+}
+.reset:active {
+  background-color: $colorActiveError;
+}
